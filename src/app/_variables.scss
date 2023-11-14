@@ -1,25 +1,30 @@
+// https://www.realtimecolors.com/dashboard?colors=000000-feeddb-D0501F-FE6125-000000&fonts=Red%20Hat%20Display-Red%20Hat%20Display
 
-// https://colorhunt.co/palette/000000f4dfc8f4eae0faf6f0
-// https://www.realtimecolors.com/dashboard?colors=1a0821-f2e2f8-af4cd6-f0def7-a637d2&fonts=JetBrainsMono%20Nerd%20Font-JetBrainsMono%20Nerd%20Font
+@import url('https://fonts.googleapis.com/css?family=Red Hat Display:700|Red Hat Display:400');
+
+$text-color: #000000;
+$background-color: #FEEDDB;
+$primary-color: #D0501F;
+$secondary-color: #FE6125;
+$accent-color: #000000;
+
+$body-font-family: 'Red Hat Display';
+$heading-font-family: 'Barlow';
 
 
-$text-color: #1A0821;
-$background-color: #F2E2F8;
-$primary-color: #AF4CD6;
-$secondary-color: #F0DEF7;
-$accent-color: #A637D2;
-
-$dark-text-color: #F0DEF7;
-$dark-background-color: #17071D;
-$dark-primary-color: #8C29B3;
-$dark-secondary-color: #1A0821;
-$dark-accent-color: #9C2DC8;
-
-$font-family: 'JetBrainsMono Nerd Font';
 html {font-size: 100%;} /* 16px */
-h1 {font-size: 4.210rem; /* 67.36px */}
-h2 {font-size: 3.158rem; /* 50.56px */}
-h3 {font-size: 2.369rem; /* 37.92px */}
-h4 {font-size: 1.777rem; /* 28.48px */}
-h5 {font-size: 1.333rem; /* 21.28px */}
-small {font-size: 0.750rem; /* 12px */}
+h1 {font-size: 5.652rem; /* 90.4px */}
+h2 {font-size: 3.997rem; /* 64px */}
+h3 {font-size: 2.827rem; /* 45.28px */}
+h4 {font-size: 1.999rem; /* 32px */}
+h5 {font-size: 1.414rem; /* 22.56px */}
+small {font-size: 0.707rem; /* 11.36px */}
+
+h1, h2, h3, h4, h5 {
+  font-family: $heading-font-family;
+  font-weight: 700;
+}
+body {
+  font-family: 'Red Hat Display';
+  font-weight: 400;
+}

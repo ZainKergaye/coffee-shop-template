@@ -1,11 +1,53 @@
 @import '../_variables.scss';
-.responsive{
-  max-width: 50px;
-  max-height: 50px;
-}
+
 
 .sticky {
+  background-color: $background-color;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+
+}
+
+.Logo{
+  max-width: 10%;
+  
+}
+
+.Menu{
+  font: $body-font-family;
+  padding:10px;
+  background-color: $primary-color;
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  color: $text-color;
+}
+
+
+.OrderButton {
+  display: inline-block;
+  padding: 10px;
+  background-color: $primary-color; 
+  text-decoration: none;
+  border-radius: 10px; 
+  transition: background-color 0.3s ease; 
+  color: $text-color; 
+  width: fit-content;
+  height: fit-content;
+  
+
+  
+}
+.OrderButton:hover {
+  background-color: $secondary-color;
+}
+.OrderNow{
+  max-width: 25%;
+  height: auto;
+  margin-left: 0px; /* Adjust as needed */
+  margin-right: 0px;
 }
