@@ -2,7 +2,7 @@
 
 
 .sticky {
-  background-color: $background-color;
+  background-color: $primary-color;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -13,27 +13,34 @@
 }
 
 .Logo{
-  max-width: 10%;
+  max-width: 500px;
+  min-width: 15%;
   
 }
-
-.Menu{
+.TextBelowIcon{
+  font-family: $body-font-family;
+}
+.MenuButton{
   font: $body-font-family;
   padding:10px;
   background-color: $primary-color;
-  border-radius: 10px;
+  border-bottom-right-radius: 5px;
   width: fit-content;
   height: fit-content;
   color: $text-color;
+  transition: background-color 0.3s ease;
 }
 
+.MenuButton:hover{
+  background-color: $secondary-color;
+}
 
 .OrderButton {
   display: inline-block;
   padding: 10px;
   background-color: $primary-color; 
   text-decoration: none;
-  border-radius: 10px; 
+  border-bottom-left-radius: 5px;  
   transition: background-color 0.3s ease; 
   color: $text-color; 
   width: fit-content;
@@ -45,8 +52,8 @@
 .OrderButton:hover {
   background-color: $secondary-color;
 }
-.OrderNow{
-  max-width: 25%;
+.NavIcon{
+  max-width: 50%;
   height: auto;
   margin-left: 0px; /* Adjust as needed */
   margin-right: 0px;

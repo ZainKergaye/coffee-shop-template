@@ -1,6 +1,6 @@
 // https://www.realtimecolors.com/dashboard?colors=000000-feeddb-D0501F-FE6125-000000&fonts=Red%20Hat%20Display-Red%20Hat%20Display
 
-@import url('https://fonts.googleapis.com/css?family=Red Hat Display:700|Red Hat Display:400');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Red+Hat+Display&display=swap');
 
 $text-color: #000000;
 $background-color: #FEEDDB;
@@ -8,8 +8,8 @@ $primary-color: #D0501F;
 $secondary-color: #FE6125;
 $accent-color: #000000;
 
-$body-font-family: 'Red Hat Display';
-$heading-font-family: 'Barlow';
+$body-font-family: 'Red Hat Display', sans-serif; // The sans-serif is a backup I think
+$heading-font-family: 'Barlow', sans-serif;
 
 
 html {font-size: 100%;} /* 16px */
@@ -25,6 +25,6 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
 body {
-  font-family: 'Red Hat Display';
+  font-family: $body-font-family;
   font-weight: 400;
 }
