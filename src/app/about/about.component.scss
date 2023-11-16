@@ -1,2 +1,24 @@
-
 @import '../_variables.scss';
+
+// This CSS code applies when the browser window is 399 px and below (phone size)
+.container {
+    background-color: $secondary-color;
+    width: 1/2;
+}
+
+
+// This CSS applies when the browser window is between 400 and 800 like Ipad size
+@media (min-width:400px) {
+
+}
+
+// This CSS applies when the browser window is 800 px and above (computer size)
+
+@media (min-width:1700px) {
+    .container {
+        background-color: $background-color;
+        //width: 50vw;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}

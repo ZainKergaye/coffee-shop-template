@@ -18,7 +18,7 @@
 
     h2 {
       font-family: $heading-font-family;
-      font-weight: 700;
+      font-weight: 1000;
       color: $background-color;
       font-size:2vw;
     }
@@ -97,7 +97,7 @@
   
       h2 {
         font-family: $heading-font-family;
-        font-weight: 700;
+        font-weight: 1000;
         color: $background-color;
         font-size:2vw;
       }
@@ -159,7 +159,7 @@
 }
 
 // This CSS applies when the browser window is 800 px and above (computer size)
-@media (min-width:800px) {
+@media (min-width:1700px) {
   .sticky {
     // For the nav bar always sticking to the top
     background-color: $primary-color;
@@ -178,7 +178,7 @@
   
       h2 {
         font-family: $heading-font-family;
-        font-weight: 700;
+        font-weight: 1000;
         color: $background-color;
         font-size:4vw;
       }
@@ -189,8 +189,8 @@
       }
   
       .LogoImage img{
-        width: fit-content;
-        height: fit-content;
+        width: auto;
+        height: 100%;
         max-height: 100px;
         display:block;
         flex: 2;
