@@ -1,6 +1,25 @@
-
 @import './_variables.scss';
 
-.about{
-    background-color: $primary-color;
+.container {
+    .flexbox{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        .about {
+            order: 1; // Order of item in container
+            flex-grow: 1; // Priority for the item to take up space on row
+            flex-basis: 50vh; // Default flex item size
+        }
+        .where-to-find {
+            order: 2;
+            flex-grow: 1;
+            flex-basis: 50vh; 
+        }
+        .menu {
+            order: 3;
+        }
+        .home {
+            order: 4;
+        }
+    }
 }
