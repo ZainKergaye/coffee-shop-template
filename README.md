@@ -5,6 +5,8 @@ Domain:  http://yanacoffeeshop.com
 
 Sign logo text looks like Barlow 800 
 
+ Hours spent: 20
+
 
  ## My vision for the pictures that would make this website pop out: 
 - A row of colorful drinks
