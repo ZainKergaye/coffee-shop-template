@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { WhereToFindComponent } from './where-to-find/where-to-find.component';
+import { PopularItemsComponent } from './popular-items/popular-items.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { WhereToFindComponent } from './where-to-find/where-to-find.component';
     AboutComponent,
     MenuComponent,
     FooterComponent,
-    WhereToFindComponent
+    WhereToFindComponent,
+    PopularItemsComponent
   ],
   imports: [
     BrowserModule,

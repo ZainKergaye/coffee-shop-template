@@ -25,3 +25,15 @@ Sign logo text looks like Barlow 800
 - Equiptment and close ups of the process
 - Branding elements 
     + Get more brand shots
+
+
+
+WHere to find us should have picture of shop in background
+Introductions should take up a big block to really show who we are
+menu will be in another page
+Where to find us will have number and address   "visit us" Will be the tite
+
+sightglasscoffee.com << reference 
+quillscoffee.com << That too
+republicofpie.com
+artcadenyack.com

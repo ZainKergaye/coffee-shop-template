@@ -1,6 +1,9 @@
 @import '../_variables.scss';
 
 .container {
+    text-align: center;
     background-color: $primary-color;
     //width: 50vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
 }
