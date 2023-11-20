@@ -2,6 +2,11 @@
     <img src="assets/Placeholder.png" alt="Home">
     
     <div class="Text">
+        
         <h2>Welcome to Y.A.N.A</h2>
+        <div class="IMGSlider" #IMGSlider>
+            <div *ngFor="let image of images" class="slide" [ngStyle]="{'background-image': 'url(' + image + ')'}"></div>
+        </div>
+        <a href="https://www.google.com" target=""><h3>Order Online</h3></a>
     </div>
-</div>
+</div>  
