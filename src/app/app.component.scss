@@ -1,30 +1,43 @@
 @import './_variables.scss';
 
 .container {
-    .flexbox{
+    .nav{
+        z-index: 20; // This is to put on top of everything else
+        position: sticky;
+        position: -webkit-sticky;
+    }
+    .flexbox {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         flex-wrap: wrap;
-        align-items: flex-start; 
+        align-items: flex-start;
+
         .about {
             order: 1; // Order of item in container
             flex-grow: 1; // Priority for the item to take up space on row
             flex-basis: 50vh; // Default flex item size
             min-width: 90vh;
         }
+
         .where-to-find {
             order: 2;
             flex-grow: 1;
-            flex-basis: 50vh; 
+            flex-basis: 50vh;
             //min-width: 20vw;
         }
-        
-        .popular-items{
+
+        .popular-items {
             order: 4;
         }
-        .menu {
-        }
+
+    }
+
+    .non-flexbox {
+
         .home {
+            position: relative;
+
         }
     }
+
 }
