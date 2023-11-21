@@ -6,4 +6,15 @@
     //width: 50vw;
     padding-right: 2vw;
     padding-left: 2vw;
+    border-radius: 10px;
+    img{
+        width: max-width;
+        height: auto;
+        max-width: 90vh;
+    }
+    .noUnderline {
+        text-decoration: none;
+        color: $secondary-color;
+        padding: 5px; //change later
+    }
 }

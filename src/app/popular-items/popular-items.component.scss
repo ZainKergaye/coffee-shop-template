@@ -1,5 +1,29 @@
 @import '../_variables.scss';
 
-.container{
+.container {
     background-color: $background-color;
+    h2 {
+        text-align: center;
+        
+    }
+
+    .Featured {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+
+        .ProductListing {
+            text-align: center;
+            padding: 10px;
+            background-color: $primary-color;
+            border-radius: 10px;
+            width:20vw;
+            img {
+                width: max-width;
+                height: fit-content;
+                max-width: 20vw;
+            }
+        }
+    }
 }

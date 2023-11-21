@@ -1,2 +1,14 @@
 
 @import '../_variables.scss';
+
+.footer {   
+    text-align: center;
+    padding-top: 100px;
+    background-color: $primary-color;
+    .noUnderline {
+        text-decoration: none;
+        color: $secondary-color;
+        padding: 5px; //change later
+    }
+
+}

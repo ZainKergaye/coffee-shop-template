@@ -39,10 +39,15 @@ export class HomeComponent implements OnInit {
         this.nextSlide();
       });
   }
+
+
   nextSlide() {
+
     this.currentSlide = (this.currentSlide + 1) % this.images.length;
     if (this.IMGSlider) {
-      this.IMGSlider.nativeElement.style.transform = `translateX(${-this.currentSlide * 100}%)`;
+      const transformValue = `translateX(${-this.currentSlide * 100}%)`;
+      this.IMGSlider.nativeElement.style.transform = transformValue;
     }
+
   }
 }

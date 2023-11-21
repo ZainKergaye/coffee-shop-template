@@ -2,8 +2,11 @@
 
 // This CSS code applies when the browser window is 399 px and below (phone size)
 .container {
+    text-align: center;
     background-color: $background-color;
-    p{
-        text-align: center;
+    img{
+        width: max-width;
+        height: auto;
+        max-width: 90vh;
     }
 }
