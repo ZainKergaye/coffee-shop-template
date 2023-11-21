@@ -18,10 +18,11 @@
     .Text {
         h2 {
             font-family: $heading-font-family;
+            color: $background-color;
         }
 
         font-family: $body-font-family;
-        margin-top: 350px;
+        margin-top: 150px;
         top: none;
         position: absolute;
         //top: 0%;

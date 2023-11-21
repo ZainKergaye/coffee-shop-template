@@ -12,6 +12,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { WhereToFindComponent } from './where-to-find/where-to-find.component';
 import { PopularItemsComponent } from './popular-items/popular-items.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PopularItemsComponent } from './popular-items/popular-items.component';
     MenuComponent,
     FooterComponent,
     WhereToFindComponent,
-    PopularItemsComponent
+    PopularItemsComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

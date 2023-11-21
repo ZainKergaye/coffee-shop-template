@@ -1,6 +1,5 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { interval } from 'rxjs';
-import { take } from 'rxjs/operators';
+
 
 
 
@@ -9,41 +8,7 @@ import { take } from 'rxjs/operators';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
-  @ViewChild('IMGSlider') IMGSlider: ElementRef | undefined;
+export class HomeComponent {
 
-
-  images: String[] = [
-    'assets/Slideshow/SlideShow0.jpg',
-    'assets/Slideshow/SlideShow1.jpg',
-    'assets/Slideshow/SlideShow2.jpg',
-    'assets/Slideshow/SlideShow3.jpg',
-    'assets/Slideshow/SlideShow4.jpg'
-  ];
-
-  currentSlide = 0;
-
-  ngOnInit() {
-    this.startAutoScroll();
-  }
-
-  startAutoScroll() {
-    interval(3000) // Adjust the interval (in milliseconds) between slides
-      .pipe(take(this.images.length))
-      .subscribe(() => {
-        this.nextSlide();
-      });
-  }
-
-
-  nextSlide() {
-
-    this.currentSlide = (this.currentSlide + 1) % this.images.length;
-    if (this.IMGSlider) {
-      const transformValue = `translateX(${-this.currentSlide * 100}%)`;
-      this.IMGSlider.nativeElement.style.transform = transformValue;
-    }
-
-  }
 
 }

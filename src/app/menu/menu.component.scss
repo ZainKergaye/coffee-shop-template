@@ -1,16 +1,4 @@
 
 @import '../_variables.scss';
 
-.Container {
-    font-family: $body-font-family;
-    .Catagories{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        .Contents{
-            list-style: none;
-        }
-    }
-}
+.Container {}
