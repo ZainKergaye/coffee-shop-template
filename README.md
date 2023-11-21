@@ -28,12 +28,27 @@ Sign logo text looks like Barlow 800
 
 
 
-WHere to find us should have picture of shop in background
+Where to find us should have picture of shop in background
+
 Introductions should take up a big block to really show who we are
-menu will be in another page
-Where to find us will have number and address   "visit us" Will be the tite
+
+Menu will be in another page
+
+Where to find us will have number and address   "visit us" Will be the title
 
 sightglasscoffee.com << reference 
+
 quillscoffee.com << That too
+
 republicofpie.com
+
 artcadenyack.com
+
+
+
+
+# To build and deploy:
+
+ng build --base-href "https://ZainKergaye.github.io/coffee-shop-template/" 
+
+npx angular-cli-ghpages --dir=dist/coffee-shop-template

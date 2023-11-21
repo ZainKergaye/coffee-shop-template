@@ -3,6 +3,7 @@ import { interval } from 'rxjs';
 import { take } from 'rxjs/operators';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,17 +14,11 @@ export class HomeComponent implements OnInit {
 
 
   images: String[] = [
-    'assets/Placeholder2.png',
-    'assets/Placeholder2.png',
-    'assets/Placeholder2.png',
-    'assets/Placeholder2.png',
-    'assets/Placeholder2.png',
-    'assets/Placeholder2.png',
-    'assets/Placeholder2.png',
-    'assets/Placeholder2.png',
-    'assets/Placeholder2.png',
-    'assets/Placeholder2.png',
-    'assets/Placeholder2.png'
+    'assets/Slideshow/SlideShow0.jpg',
+    'assets/Slideshow/SlideShow1.jpg',
+    'assets/Slideshow/SlideShow2.jpg',
+    'assets/Slideshow/SlideShow3.jpg',
+    'assets/Slideshow/SlideShow4.jpg'
   ];
 
   currentSlide = 0;
@@ -50,4 +45,5 @@ export class HomeComponent implements OnInit {
     }
 
   }
+
 }
