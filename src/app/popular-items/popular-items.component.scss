@@ -2,9 +2,9 @@
 
 .container {
     background-color: $background-color;
+
     h2 {
         text-align: center;
-        
     }
 
     .Featured {
@@ -12,18 +12,55 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-evenly;
+        align-items: center;
 
         .ProductListing {
+
             text-align: center;
-            padding: 10px;
+            margin: 20px;
+            padding: 30px;
             background-color: $primary-color;
             border-radius: 10px;
-            width:20vw;
+            width: 20vw;
+
+            // 1500 px
             img {
-                width: max-width;
                 height: fit-content;
                 max-width: 20vw;
             }
         }
+
+        @media(max-width: 1500px) {
+
+            // Two Product listings here
+            .ProductListing:nth-child(n+3) {
+                display: none;
+            }
+            .ProductListing {
+                flex-grow: 1;
+            }
+
+        }
+
+        @media(max-width: 600px) {
+            flex-direction: column;
+
+            .ProductListing {
+                width: 79vw;
+                height: 700px;
+
+                img {
+                    max-width: 80vw;
+                    height: fit-content;
+                }
+
+            }
+
+            .ProductListing:nth-child(n+3) {
+                display: none;
+            }
+        }
+
+
     }
 }

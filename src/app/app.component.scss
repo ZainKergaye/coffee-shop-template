@@ -6,38 +6,4 @@
         position: sticky;
         position: -webkit-sticky;
     }
-    .flexbox {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-
-        .about {
-            order: 1; // Order of item in container
-            flex-grow: 1; // Priority for the item to take up space on row
-            flex-basis: 50vh; // Default flex item size
-            min-width: 90vh;
-        }
-
-        .where-to-find {
-            order: 2;
-            flex-grow: 1;
-            flex-basis: 50vh;
-            //min-width: 20vw;
-        }
-
-        .popular-items {
-            order: 4;
-        }
-
-    }
-
-    .non-flexbox {
-
-        .home {
-            position: relative;
-
-        }
-    }
-
 }

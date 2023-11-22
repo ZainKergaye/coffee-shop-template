@@ -16,6 +16,9 @@
     }
 
     .Text {
+        @media (max-width: 550px){
+            margin-top: 200px;
+        }
         h2 {
             font-family: $heading-font-family;
             color: $background-color;
@@ -28,6 +31,7 @@
         //top: 0%;
         left: 50%;
         transform: translate(-50%, -50%);
+        color: $background-color;
 
         .noUnderline {
             text-decoration: none;

@@ -7,11 +7,21 @@
     padding-right: 2vw;
     padding-left: 2vw;
     border-radius: 10px;
-    img{
+    margin:20px;
+
+    img {
         width: max-width;
         height: auto;
-        max-width: 90vh;
+        max-width: 40vw;
+
     }
+
+    .Picture {
+        img {
+            min-width: 300px;
+        }
+    }
+
     .noUnderline {
         text-decoration: none;
         color: $secondary-color;

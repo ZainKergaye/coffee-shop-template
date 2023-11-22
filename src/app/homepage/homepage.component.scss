@@ -6,25 +6,19 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
+        justify-content: center;
 
         .about {
             order: 1; // Order of item in container
-            flex-grow: 1; // Priority for the item to take up space on row
             flex-basis: 50vh; // Default flex item size
-            min-width: 90vh;
+            //min-width: 70vh;
         }
 
         .where-to-find {
             order: 2;
-            flex-grow: 1;
             flex-basis: 50vh;
             //min-width: 20vw;
         }
-
-        .popular-items {
-            order: 4;
-        }
-
     }
 
     .non-flexbox {

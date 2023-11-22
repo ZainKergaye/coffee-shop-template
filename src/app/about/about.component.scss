@@ -4,9 +4,11 @@
 .container {
     text-align: center;
     background-color: $background-color;
+    margin: 20px;
+    
     img{
-        width: max-width;
         height: auto;
-        max-width: 90vh;
+        max-width: 40vw;
+        min-width: 300px;
     }
 }

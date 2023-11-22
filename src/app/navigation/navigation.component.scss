@@ -2,7 +2,6 @@
 
 // This CSS code applies when the browser window is 399 px and below (phone size)
 .sticky {
-  // For the nav bar always sticking to the top
   background-color: $primary-color;
   position: -webkit-sticky; // For safari
   position: sticky;
@@ -86,7 +85,6 @@
 @media (min-width:399px) {
   .sticky {
     
-    // For the nav bar always sticking to the top
     background-color: $primary-color;
     position: -webkit-sticky; // For safari
     position: sticky;
@@ -166,7 +164,6 @@
 // This CSS applies when the browser window is between 400 and 800 like Ipad size
 @media (min-width:651px) {
   .sticky {
-    // For the nav bar always sticking to the top
     background-color: $primary-color;
     position: -webkit-sticky; // For safari
     position: sticky;
@@ -247,7 +244,6 @@
 // This CSS applies when the browser window is 800 px and above (computer size)
 @media (min-width:1700px) {
   .sticky {
-    // For the nav bar always sticking to the top
     background-color: $primary-color;
     position: -webkit-sticky; // For safari
     position: sticky;
@@ -260,6 +256,7 @@
     .Logo {
       display: flex;
       align-items: center;
+      flex-direction: row;
 
 
       h2 {
