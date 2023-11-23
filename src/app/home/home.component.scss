@@ -33,7 +33,6 @@
         transform: translate(-50%, -50%);
         color: $background-color;
         z-index: 15; //Hopefully fix text above nav bar iphone bug
-        -webkit-transform-origin-z: 1;
 
         .noUnderline {
             text-decoration: none;
