@@ -6,6 +6,10 @@
     h2 {
         text-align: center;
     }
+    .noUnderline{
+        text-decoration: none;
+        color: $text-color;
+    }
 
     .Featured {
         display: flex;
