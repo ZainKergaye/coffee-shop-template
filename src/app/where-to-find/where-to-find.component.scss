@@ -8,6 +8,10 @@
     padding-left: 2vw;
     border-radius: 10px;
     margin:20px;
+    .mapLink{
+        text-decoration: none;
+        color: $accent-color;
+    }
 
     img {
         width: max-width;
