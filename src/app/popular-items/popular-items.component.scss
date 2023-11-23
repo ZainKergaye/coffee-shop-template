@@ -31,6 +31,7 @@
             img {
                 height: fit-content;
                 max-width: 20vw;
+                max-height: 80vw;
             }
         }
 
@@ -42,6 +43,10 @@
             }
             .ProductListing {
                 flex-grow: 1;
+                img {
+                    max-width: 35vw;
+                    height: fit-content;
+                }
             }
 
         }
