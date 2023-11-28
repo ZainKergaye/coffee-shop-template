@@ -1,11 +1,10 @@
 <!doctype html>
-Access-Control-Allow-Origin: https://yanacoffeeshop.com
 <html lang="en" data-critters-container>
 <head>
   <link rel="preload" as="image" href="assets/Images/HomeBackground.jpg">
   <meta charset="utf-8">
   <title>Y.A.N.A Coffee & Tea</title>
-  <base href="https://ZainKergaye.github.io/coffee-shop-template/">
+  <base href="https://yanacoffeeshop.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <style>@import"https://fonts.googleapis.com/css2?family=Barlow&family=Red+Hat+Display&display=swap";html{font-size:100%}body{font-family:Red Hat Display,sans-serif;font-weight:400}body{font-family:Red Hat Display,sans-serif;background-color:#feeddb;margin:0}</style><link rel="stylesheet" href="styles.2f35182063876d0a.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.2f35182063876d0a.css"></noscript></head>
@@ -16,7 +15,24 @@ Access-Control-Allow-Origin: https://yanacoffeeshop.com
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
+
   gtag('config', 'G-NRZZE5WGB2');
+  (function() {
+    var cors_api_host = 'cors-anywhere.herokuapp.com';
+    var cors_api_url = 'https://' + cors_api_host + '/';
+    var slice = [].slice;
+    var origin = window.location.protocol + '//' + window.location.host;
+    var open = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function() {
+        var args = slice.call(arguments);
+        var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
+        if (targetOrigin && targetOrigin[0].toLowerCase() !== origin &&
+            targetOrigin[1] !== cors_api_host) {
+            args[1] = cors_api_url + args[1];
+        }
+        return open.apply(this, args);
+    };
+})();
 </script>
 
 <body>
