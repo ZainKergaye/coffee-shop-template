@@ -16,37 +16,47 @@
     }
 
     .Text {
-        
-        @media (max-width: 550px){
-            margin-top: 200px;
+
+        @media (max-width: 550px) {
+            margin-top: 250px;
         }
+
         h2 {
             font-family: $heading-font-family;
             color: $background-color;
-            padding:10px;
-            background-color:$primary-color;
+            padding: 10px;
+            background-color: $primary-color;
             border-radius: 10px;
         }
-        a{
-            padding:10px;
-            background-color:$primary-color;
-            border-radius: 10px;;
-            margin:50px;
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            gap:10px;
+
+            a {
+                padding: 10px;
+                background-color: $primary-color;
+                border-radius: 10px;
+                text-decoration: none;
+                color: $background-color;
+
+
+
+            }
         }
-        
+
 
         font-family: $body-font-family;
-        margin-top: 150px;
+        margin-top: 200px;
         top: none;
         position: absolute;
         //top: 0%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 15; //Hopefully fix text above nav bar iphone bug
-        .noUnderline {
-            text-decoration: none;
-            color: $background-color;
-        }
+
+
 
         .IMGSlider {
             display: flex;
@@ -60,7 +70,7 @@
                 height: 100%;
                 background-size: cover;
                 transition: left 1.0s ease-in-out;
-                
+
 
             }
         }
