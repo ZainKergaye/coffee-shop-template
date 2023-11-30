@@ -16,13 +16,24 @@
     }
 
     .Text {
+        
         @media (max-width: 550px){
             margin-top: 200px;
         }
         h2 {
             font-family: $heading-font-family;
-            color: $secondary-color;
+            color: $background-color;
+            padding:10px;
+            background-color:$primary-color;
+            border-radius: 10px;
         }
+        a{
+            padding:10px;
+            background-color:$primary-color;
+            border-radius: 10px;;
+            margin:50px;
+        }
+        
 
         font-family: $body-font-family;
         margin-top: 150px;
@@ -31,12 +42,10 @@
         //top: 0%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: $background-color;
         z-index: 15; //Hopefully fix text above nav bar iphone bug
-
         .noUnderline {
             text-decoration: none;
-            color: $secondary-color;
+            color: $background-color;
         }
 
         .IMGSlider {
