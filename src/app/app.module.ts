@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { WhereToFindComponent } from './where-to-find/where-to-find.component';
 import { PopularItemsComponent } from './popular-items/popular-items.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     FooterComponent,
     WhereToFindComponent,
     PopularItemsComponent,
-    HomepageComponent
+    HomepageComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
