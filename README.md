@@ -1,10 +1,6 @@
- # YANA Coffee Shop Website 
-
+# YANA Coffee Shop Website 
 
 Domain:  http://yanacoffeeshop.com
-
- Hours spent: 25
-
 
 ### References
 sightglasscoffee.com << reference 
@@ -31,4 +27,5 @@ npx angular-cli-ghpages --dir=dist/coffee-shop-template
 - In the about section, the placeholder image does not show DONE
 - On apple iphone, horizontal view, Popular item images are stretched DONE
 - Reduce size of nav.scss by deleting duplicate lines in media, it defaults to the non media one so no need for useless space DONE
-- implement lazy loading to offscreen images
+- implement lazy loading to offscreen images DONE
+- Visual redesign needed

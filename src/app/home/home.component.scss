@@ -1,6 +1,5 @@
 @import '../_variables.scss';
 
-
 .Container {
     text-align: center;
     position: relative;
@@ -12,7 +11,6 @@
 
     .img {
         display: block;
-
     }
 
     .Text {
@@ -40,9 +38,6 @@
                 border-radius: 10px;
                 text-decoration: none;
                 color: $background-color;
-
-
-
             }
         }
 

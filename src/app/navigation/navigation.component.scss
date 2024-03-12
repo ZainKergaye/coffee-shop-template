@@ -24,7 +24,6 @@
       font-size: 5vw;
       margin-block-start: 0px;
       margin-block-end: 0px;
-      
     }
 
     .LeftText {
@@ -84,10 +83,10 @@
 }
 
 
-// This CSS applies when the browser window is between 650 and 400 
+// This CSS applies when the browser window is between 650 and 400
 @media (min-width:399px) {
   .sticky {
-    
+
     .Logo {
       h2 {
         font-size: 2vh;

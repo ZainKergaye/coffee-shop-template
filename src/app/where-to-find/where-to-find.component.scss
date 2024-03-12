@@ -1,29 +1,28 @@
-@import '../_variables.scss';
+@import "../_variables.scss";
 
 .container {
-    text-align: center;
-    background-color: $primary-color;
-    //width: 50vw;
-    padding-right: 2vw;
-    padding-left: 2vw;
-    border-radius: 10px;
-    margin:20px;
-    .mapLink{
-        text-decoration: none;
-        color: $accent-color;
-    }
+  text-align: center;
+  background-color: $primary-color;
+  //width: 50vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  border-radius: 10px;
+  margin: 20px;
+  .mapLink {
+    text-decoration: none;
+    color: $accent-color;
+  }
 
+  img {
+    width: max-width;
+    height: auto;
+    max-width: 40vw;
+  }
+
+  .Picture {
     img {
-        width: max-width;
-        height: auto;
-        max-width: 40vw;
-
+      min-width: 300px;
     }
-
-    .Picture {
-        img {
-            min-width: 300px;
-        }
-    }
-
+  }
 }
+
