@@ -15,42 +15,69 @@ $space-from-edge: 30px;
 
   .Logo {
     img {
-    width: fit-content;
-    height: fit-content;
-    max-height: 125px;
-    max-width: 125px;
-    margin-left: $space-from-edge;
+      width: fit-content;
+      height: fit-content;
+      max-height: 125px;
+      max-width: 125px;
+      margin-left: $space-from-edge;
     }
   }
-  .Items{
-    font-family:$heading-font-family;
-    font-size:1.999rem;
-    a:link{
+
+  .Items {
+    font-family: $heading-font-family;
+    font-size: 1.999rem;
+
+    a:link {
       margin-left: 10px;
       margin-right: 10px;
-      color:$text-color;
+      color: $text-color;
       text-decoration: none;
     }
-    a:visited{
-      color:$text-color;
+
+    a:visited {
+      color: $text-color;
     }
+
     a:hover {
-      color:$secondary-color;
+      color: $secondary-color;
     }
   }
-  .ItemsHidden{
-    .menu-button{
+
+  .ItemsHidden {
+    .menu-button {
       background-color: $background-color;
       border: none;
       margin-right: $space-from-edge;
+      font-size: 30px;
     }
-    .ItemsHiddenToggled{
+
+    .ItemsHiddenToggled {
       display: flex;
       flex-direction: column;
+      position: fixed;
+      top:125px; // Bottom of nav bar
+      left:75vw; // Good for small viewscreens
+      right:0;
+      background-color: $background-color;
+
+      a:link {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+        // position:absolute;
+      }
+
+      a:visited {
+        color: $text-color;
+      }
+
+      a:hover {
+        color: $secondary-color;
+      }
     }
   }
 }
 
-@media (min-width:10000px){
- // Redundant for now
+@media (min-width:10000px) {
+  // Redundant for now
 }

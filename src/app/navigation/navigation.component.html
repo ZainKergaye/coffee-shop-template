@@ -11,13 +11,13 @@
     <a [routerLink]="['about']">About us</a>
   </div>
   <div class="ItemsHidden" *ngIf="hiddenMenu">
-    <button class="menu-button" (click)="toggleHiddenMenu()"><h2>☰</h2></button>
+    <button class="menu-button" (click)="toggleHiddenMenu()">☰</button>
     <div class="ItemsHiddenToggled" *ngIf="ItemsHiddenToggled">
-      <a [routerLink]="['menu']">Menu</a>
-      <a [routerLink]="['order']">Order</a>
-      <a [routerLink]="['cater']">Catering</a>
-      <a [routerLink]="['visit']">Visit us</a>
-      <a [routerLink]="['about']">About us</a>
+      <ul><a [routerLink]="['menu']" (click)="toggleHiddenMenu()">Menu</a></ul>
+      <ul><a [routerLink]="['order']" (click)="toggleHiddenMenu()">Order</a></ul>
+      <ul><a [routerLink]="['cater']" (click)="toggleHiddenMenu()">Catering</a></ul>
+      <ul><a [routerLink]="['visit']" (click)="toggleHiddenMenu()">Visit us</a></ul>
+      <ul><a [routerLink]="['about']" (click)="toggleHiddenMenu()">About us</a></ul>
     </div>
   </div>
 </div>
