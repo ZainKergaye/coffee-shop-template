@@ -8,6 +8,10 @@ import { HomepageComponent } from './homepage/homepage.component';
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'order', component: MenuComponent },
+  { path: 'cater', component: MenuComponent },
+  { path: 'visit', component: MenuComponent },
+  { path: 'about', component: MenuComponent },
 ];
 
 @NgModule({
