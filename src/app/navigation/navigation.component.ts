@@ -6,9 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent {
-  showMenu = false;
+  hiddenMenu = true; // TODO: Not implemented
+  ItemsHiddenToggled = false;
 
-  toggleMenu() {
-    this.showMenu = !this.showMenu;
+  toggleHiddenMenu() {
+    this.ItemsHiddenToggled = !this.ItemsHiddenToggled;
   }
 }

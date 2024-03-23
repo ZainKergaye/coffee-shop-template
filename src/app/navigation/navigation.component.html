@@ -1,18 +1,23 @@
 <div class="sticky">
-
   <div class="Logo" [routerLink]="['']">
-      <img
-        src="assets/Icons/YANALOGO.png"
-        alt="You. Are. Not. Alone."
-      />
+    <img src="assets/Icons/YANALOGO.png" alt="You. Are. Not. Alone." />
   </div>
 
-  <div class="Items" *ngIf="!showMenu">
+  <div class="Items" *ngIf="!hiddenMenu">
     <a [routerLink]="['menu']">Menu</a>
     <a [routerLink]="['order']">Order</a>
     <a [routerLink]="['cater']">Catering</a>
     <a [routerLink]="['visit']">Visit us</a>
     <a [routerLink]="['about']">About us</a>
   </div>
-  <button class="menu-button" *ngIf="showMenu" (click)="toggleMenu()">Menuu</button>
+  <div class="ItemsHidden" *ngIf="hiddenMenu">
+    <button class="menu-button" (click)="toggleHiddenMenu()"><h2>☰</h2></button>
+    <div class="ItemsHiddenToggled" *ngIf="ItemsHiddenToggled">
+      <a [routerLink]="['menu']">Menu</a>
+      <a [routerLink]="['order']">Order</a>
+      <a [routerLink]="['cater']">Catering</a>
+      <a [routerLink]="['visit']">Visit us</a>
+      <a [routerLink]="['about']">About us</a>
+    </div>
+  </div>
 </div>

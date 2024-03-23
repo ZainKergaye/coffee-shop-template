@@ -1,5 +1,7 @@
 @import '../_variables.scss';
 
+$space-from-edge: 30px;
+
 // This CSS code applies when the browser window is 399 px and below (phone size)
 .sticky {
   background-color: $background-color;
@@ -17,6 +19,7 @@
     height: fit-content;
     max-height: 125px;
     max-width: 125px;
+    margin-left: $space-from-edge;
     }
   }
   .Items{
@@ -33,6 +36,17 @@
     }
     a:hover {
       color:$secondary-color;
+    }
+  }
+  .ItemsHidden{
+    .menu-button{
+      background-color: $background-color;
+      border: none;
+      margin-right: $space-from-edge;
+    }
+    .ItemsHiddenToggled{
+      display: flex;
+      flex-direction: column;
     }
   }
 }
